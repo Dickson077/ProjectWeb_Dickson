@@ -1,0 +1,677 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #fdf6e3; /* Cream */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+}
+
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+}
+
+ul.dropdown-menu.show {
+    display: block;
+}
+
+ul.dropdown-menu li a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+ul.dropdown-menu li a:hover {
+    background-color: #f3f3f3;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x600/?hotel,modern') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #ff6b6b;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e55353;
+}
+
+/* === FASILITAS === */
+.fasilitas {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === GALERI === */
+.galeri {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === FOOTER === */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.tentang p {
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video-overlay header {
+    background: transparent;
+    color: white;
+}
+
+.video-overlay nav ul li a {
+    color: white;
+}
+
+.hero-text {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.hero-text h1, .hero-text p {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.testimoni {
+  margin-bottom: 40px; /* atur sesuai kebutuhan */
+}
+
+.reservasi {
+  margin-bottom: 40px; /* atur sesuai kebutuhan */
+}
+
+.lokasi-hotel {
+  padding: 70px 20px;
+  background-color: #fafafa;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.lokasi-hotel h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.lokasi-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.lokasi-detail h3 {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #444;
+}
+
+.lokasi-detail ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lokasi-peta {
+  margin-top: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tentang-restoran {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.restoran {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 80px; /* jarak dengan footer */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.profil-hotel {
+  padding: 70px 20px;
+  background-color: #ffffff;
+  text-align: left;
+  color: #333;
+  font-family: sans-serif;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.profil-hotel .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profil-hotel h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.profil-hotel h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.profil-hotel p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.profil-hotel ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.profil-hotel li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.profil-hotel img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.profil-pembuat {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.profil-pembuat .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profil-pembuat img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profil-pembuat h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.profil-pembuat h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.profil-pembuat p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.profil-pembuat ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profil-pembuat li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.kamar-hotel {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.kamar-hotel h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.kamar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kamar-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  max-width: 340px;
+  width: 100%;
+  text-align: left;
+}
+
+.kamar-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kamar-info {
+  padding: 20px;
+}
+
+.kamar-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.kamar-info p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.kamar-info .harga {
+  font-weight: bold;
+  color: #b12704;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.event-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.event-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.event-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-features ul {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding-left: 20px;
+}
+
+.event-features li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.event-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.event-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.kontak-section {
+  padding: 70px 20px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.kontak-section h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.kontak-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+.kontak-info {
+  max-width: 700px;
+  margin: 30px auto 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.kontak-info p {
+  margin-bottom: 15px;
+}
+
+.kontak-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.kontak-info a:hover {
+  text-decoration: underline;
+}
+
+.fasilitas-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.fasilitas-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.fasilitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fasilitas-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.fasilitas-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fasilitas-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.profil-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.profil-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.profil-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.profil-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+
+.profil-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.profil-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.profil-info a:hover {
+  text-decoration: underline;
+}
