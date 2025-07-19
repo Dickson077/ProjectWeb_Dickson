@@ -1,0 +1,225 @@
+[13-Jul-2025 14:29:49 Asia/Jakarta] === CHECKOUT DEBUG START ===
+[13-Jul-2025 14:29:49 Asia/Jakarta] User ID: 18
+[13-Jul-2025 14:29:49 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 1
+            [nama_produk] => Sepatu Adidas
+            [gambar_produk] => img/sepatu1.jpg
+            [ukuran] => 39
+            [harga_satuan] => 750000
+            [jumlah] => 2
+            [stok_tersedia] => 7
+        )
+
+)
+
+[13-Jul-2025 14:29:49 Asia/Jakarta] Total calculated: 1500000
+[13-Jul-2025 14:29:49 Asia/Jakarta] Penjualan inserted with ID: 55
+[13-Jul-2025 14:29:49 Asia/Jakarta] Processing item: Array
+(
+    [id_produk] => 1
+    [nama_produk] => Sepatu Adidas
+    [gambar_produk] => img/sepatu1.jpg
+    [ukuran] => 39
+    [harga_satuan] => 750000
+    [jumlah] => 2
+    [stok_tersedia] => 7
+)
+
+[13-Jul-2025 14:29:49 Asia/Jakarta] Current stock for product 1 size 39: 7
+[13-Jul-2025 14:29:49 Asia/Jakarta] Detail inserted for product 1
+[13-Jul-2025 14:29:49 Asia/Jakarta] Stock update executed. Affected rows: 1
+[13-Jul-2025 14:29:49 Asia/Jakarta] New stock after update: 5
+[13-Jul-2025 14:29:49 Asia/Jakarta] Transaction committed successfully
+[13-Jul-2025 14:29:49 Asia/Jakarta] === CHECKOUT DEBUG END (SUCCESS) ===
+[13-Jul-2025 14:33:45 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 14:33:45 Asia/Jakarta] User ID: 18
+[13-Jul-2025 14:33:45 Asia/Jakarta] Payment Method: COD
+[13-Jul-2025 14:33:45 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 1
+            [nama_produk] => Sepatu Adidas
+            [gambar_produk] => img/sepatu1.jpg
+            [ukuran] => 39
+            [harga_satuan] => 750000
+            [jumlah] => 3
+            [stok_tersedia] => 5
+        )
+
+)
+
+[13-Jul-2025 14:33:45 Asia/Jakarta] Total calculated: 2250000
+[13-Jul-2025 14:33:45 Asia/Jakarta] Penjualan inserted with ID: 58
+[13-Jul-2025 14:33:45 Asia/Jakarta] Processing item for stock update: Product ID: 1, Size: 39, Quantity: 3
+[13-Jul-2025 14:33:45 Asia/Jakarta] Current stock for product 1 size 39: 5
+[13-Jul-2025 14:33:45 Asia/Jakarta] Detail inserted for product 1
+[13-Jul-2025 14:33:45 Asia/Jakarta] Stock update executed for product 1. Affected rows: 1
+[13-Jul-2025 14:33:45 Asia/Jakarta] New stock after update for product 1 size 39: 2
+[13-Jul-2025 14:33:45 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 14:33:45 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
+[13-Jul-2025 15:13:53 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 15:13:53 Asia/Jakarta] User ID: 19
+[13-Jul-2025 15:13:53 Asia/Jakarta] Payment Method: Transfer
+[13-Jul-2025 15:13:53 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 1
+            [nama_produk] => Sepatu Adidas
+            [gambar_produk] => img/sepatu1.jpg
+            [ukuran] => 39
+            [harga_satuan] => 750000
+            [jumlah] => 2
+            [stok_tersedia] => 2
+        )
+
+)
+
+[13-Jul-2025 15:13:53 Asia/Jakarta] Total calculated: 1500000
+[13-Jul-2025 15:13:53 Asia/Jakarta] Penjualan inserted with ID: 59
+[13-Jul-2025 15:13:53 Asia/Jakarta] Processing item for stock update: Product ID: 1, Size: 39, Quantity: 2
+[13-Jul-2025 15:13:53 Asia/Jakarta] Current stock for product 1 size 39: 2
+[13-Jul-2025 15:13:53 Asia/Jakarta] Detail inserted for product 1
+[13-Jul-2025 15:13:53 Asia/Jakarta] Stock update executed for product 1. Affected rows: 1
+[13-Jul-2025 15:13:53 Asia/Jakarta] New stock after update for product 1 size 39: 0
+[13-Jul-2025 15:13:53 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 15:13:53 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
+[13-Jul-2025 15:41:24 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 15:41:24 Asia/Jakarta] User ID: 19
+[13-Jul-2025 15:41:24 Asia/Jakarta] Payment Method: Transfer
+[13-Jul-2025 15:41:24 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 12
+            [nama_produk] => Nike Air Jordan 
+            [gambar_produk] => img/nike jordan.jpg
+            [ukuran] => 38
+            [harga_satuan] => 6000000
+            [jumlah] => 2
+            [stok_tersedia] => 7
+        )
+
+)
+
+[13-Jul-2025 15:41:24 Asia/Jakarta] Total calculated: 12000000
+[13-Jul-2025 15:41:24 Asia/Jakarta] Penjualan inserted with ID: 60
+[13-Jul-2025 15:41:24 Asia/Jakarta] Processing item for stock update: Product ID: 12, Size: 38, Quantity: 2
+[13-Jul-2025 15:41:24 Asia/Jakarta] Current stock for product 12 size 38: 7
+[13-Jul-2025 15:41:24 Asia/Jakarta] Detail inserted for product 12
+[13-Jul-2025 15:41:24 Asia/Jakarta] Stock update executed for product 12. Affected rows: 1
+[13-Jul-2025 15:41:24 Asia/Jakarta] New stock after update for product 12 size 38: 5
+[13-Jul-2025 15:41:24 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 15:41:24 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
+[13-Jul-2025 15:51:35 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 15:51:35 Asia/Jakarta] User ID: 19
+[13-Jul-2025 15:51:35 Asia/Jakarta] Payment Method: COD
+[13-Jul-2025 15:51:35 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 9
+            [nama_produk] => Nike Air Jordan Retro High
+            [gambar_produk] => img/nike1.jpg
+            [ukuran] => 38
+            [harga_satuan] => 3500000
+            [jumlah] => 2
+            [stok_tersedia] => 3
+        )
+
+)
+
+[13-Jul-2025 15:51:35 Asia/Jakarta] Total calculated: 7000000
+[13-Jul-2025 15:51:35 Asia/Jakarta] Penjualan inserted with ID: 61
+[13-Jul-2025 15:51:35 Asia/Jakarta] Processing item for stock update: Product ID: 9, Size: 38, Quantity: 2
+[13-Jul-2025 15:51:35 Asia/Jakarta] Current stock for product 9 size 38: 3
+[13-Jul-2025 15:51:35 Asia/Jakarta] Detail inserted for product 9
+[13-Jul-2025 15:51:35 Asia/Jakarta] Stock update executed for product 9. Affected rows: 1
+[13-Jul-2025 15:51:35 Asia/Jakarta] New stock after update for product 9 size 38: 1
+[13-Jul-2025 15:51:35 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 15:51:35 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
+[13-Jul-2025 15:55:04 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 15:55:04 Asia/Jakarta] User ID: 19
+[13-Jul-2025 15:55:04 Asia/Jakarta] Payment Method: COD
+[13-Jul-2025 15:55:04 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 9
+            [nama_produk] => Nike Air Jordan Retro High
+            [gambar_produk] => img/nike1.jpg
+            [ukuran] => 39
+            [harga_satuan] => 3500000
+            [jumlah] => 1
+            [stok_tersedia] => 2
+        )
+
+)
+
+[13-Jul-2025 15:55:04 Asia/Jakarta] Total calculated: 3500000
+[13-Jul-2025 15:55:04 Asia/Jakarta] Penjualan inserted with ID: 62
+[13-Jul-2025 15:55:04 Asia/Jakarta] Processing item for stock update: Product ID: 9, Size: 39, Quantity: 1
+[13-Jul-2025 15:55:04 Asia/Jakarta] Current stock for product 9 size 39: 2
+[13-Jul-2025 15:55:04 Asia/Jakarta] Detail inserted for product 9
+[13-Jul-2025 15:55:04 Asia/Jakarta] Stock update executed for product 9. Affected rows: 1
+[13-Jul-2025 15:55:04 Asia/Jakarta] New stock after update for product 9 size 39: 1
+[13-Jul-2025 15:55:04 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 15:55:04 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
+[13-Jul-2025 16:04:51 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 16:04:51 Asia/Jakarta] User ID: 19
+[13-Jul-2025 16:04:51 Asia/Jakarta] Payment Method: COD
+[13-Jul-2025 16:04:51 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 11
+            [nama_produk] => Nike Air Max
+            [gambar_produk] => img/nike air_1752385425.jpg
+            [ukuran] => 38
+            [harga_satuan] => 550000
+            [jumlah] => 2
+            [stok_tersedia] => 2
+        )
+
+)
+
+[13-Jul-2025 16:04:51 Asia/Jakarta] Total calculated: 1100000
+[13-Jul-2025 16:04:51 Asia/Jakarta] Penjualan inserted with ID: 63
+[13-Jul-2025 16:04:51 Asia/Jakarta] Processing item for stock update: Product ID: 11, Size: 38, Quantity: 2
+[13-Jul-2025 16:04:51 Asia/Jakarta] Current stock for product 11 size 38: 2
+[13-Jul-2025 16:04:51 Asia/Jakarta] Detail inserted for product 11
+[13-Jul-2025 16:04:51 Asia/Jakarta] Stock update executed for product 11. Affected rows: 1
+[13-Jul-2025 16:04:51 Asia/Jakarta] New stock after update for product 11 size 38: 0
+[13-Jul-2025 16:04:51 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 16:04:51 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
+[13-Jul-2025 16:07:19 Asia/Jakarta] === CHECKOUT PROCESS STARTED ===
+[13-Jul-2025 16:07:19 Asia/Jakarta] User ID: 19
+[13-Jul-2025 16:07:19 Asia/Jakarta] Payment Method: COD
+[13-Jul-2025 16:07:19 Asia/Jakarta] Cart contents: Array
+(
+    [0] => Array
+        (
+            [id_produk] => 12
+            [nama_produk] => Nike Air Jordan 
+            [gambar_produk] => img/nike jordan.jpg
+            [ukuran] => 38
+            [harga_satuan] => 6000000
+            [jumlah] => 1
+            [stok_tersedia] => 5
+        )
+
+)
+
+[13-Jul-2025 16:07:19 Asia/Jakarta] Total calculated: 6000000
+[13-Jul-2025 16:07:19 Asia/Jakarta] Penjualan inserted with ID: 64
+[13-Jul-2025 16:07:19 Asia/Jakarta] Processing item for stock update: Product ID: 12, Size: 38, Quantity: 1
+[13-Jul-2025 16:07:19 Asia/Jakarta] Current stock for product 12 size 38: 5
+[13-Jul-2025 16:07:19 Asia/Jakarta] Detail inserted for product 12
+[13-Jul-2025 16:07:19 Asia/Jakarta] Stock update executed for product 12. Affected rows: 1
+[13-Jul-2025 16:07:19 Asia/Jakarta] New stock after update for product 12 size 38: 4
+[13-Jul-2025 16:07:19 Asia/Jakarta] Transaction committed successfully.
+[13-Jul-2025 16:07:19 Asia/Jakarta] === CHECKOUT PROCESS END (SUCCESS) ===
